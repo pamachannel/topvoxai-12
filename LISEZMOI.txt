@@ -1,0 +1,54 @@
+TOPVOX VOICE - plugin VST3 de mixage vocal pour Cubase (et FL Studio, Ableton...)
+=================================================================================
+
+CE QUE FAIT LE PLUGIN
+- Chaîne complète pour la voix : gain d'entrée, filtre grave, gate, de-esser,
+  égaliseur 4 bandes (Chaleur / Boue / Présence / Air), compresseur, saturation,
+  reverb, delay, largeur stéréo, limiteur de sécurité.
+- 5 styles prêts à l'emploi : Rap, Chant, Voix homme, Voix femme, Coupé-décalé.
+- AUTO MIX : le plugin écoute ta voix (niveau, dynamique, graves, présence,
+  sibilances) et règle tout seul le gate, le de-esser, l'égaliseur, le
+  compresseur et le gain. Analyse 100 % locale, sans Internet, sans clé API.
+- Interface noir / or / orange avec VU-mètres (entrée, sortie, réduction de gain).
+- Très léger : prévu pour un PC modeste (Windows 10/11 64 bits). Latence : 0.
+
+OBTENIR LE SETUP (UNE SEULE FOIS, ~10 MINUTES, TOUT SE FAIT AVEC LA SOURIS)
+Le fichier TOPVOX_VOICE_SETUP.exe est fabriqué automatiquement par un ordinateur
+Windows gratuit de GitHub. Tu n'écris aucun code et tu ne tapes aucune commande.
+
+ 1. Va sur https://github.com et crée un compte gratuit (ou connecte-toi).
+ 2. Clique sur "+" en haut à droite > "New repository". Nom : TOPVOX-VOICE.
+    Clique sur "Create repository".
+ 3. Sur la page qui s'ouvre, clique sur le lien "uploading an existing file".
+ 4. Dézippe ce dossier, ouvre-le, sélectionne TOUT son contenu (y compris le
+    dossier ".github") et glisse-le dans la page GitHub. Attends la fin du
+    chargement, puis clique sur "Commit changes".
+ 5. Clique sur l'onglet "Actions". Une ligne "Construire TOPVOX VOICE" se met
+    à tourner (environ 10 minutes). Quand elle est verte (une coche), c'est fini.
+ 6. Retourne sur la page d'accueil du dépôt, colonne de droite : "Releases".
+    Clique sur le dernier, puis sur TOPVOX_VOICE_SETUP.exe pour le télécharger.
+
+INSTALLER
+ - Double-clique sur TOPVOX_VOICE_SETUP.exe. Windows peut afficher "Windows a
+   protégé votre ordinateur" (éditeur inconnu) : clique sur "Informations
+   complémentaires" puis "Exécuter quand même".
+ - Suis l'installation (Suivant, Suivant, Terminer). Le plugin est copié dans
+   C:\Program Files\Common Files\VST3, le dossier que Cubase lit tout seul.
+
+DANS CUBASE
+ 1. Ouvre Cubase (si le plugin n'apparaît pas : Studio > Gestionnaire de
+    plug-ins VST > bouton de mise à jour, ou redémarre Cubase).
+ 2. Sur ta piste de voix : Inserts > Fx > TOPVOX VOICE.
+ 3. Choisis un style (Rap, Chant, ...) puis "CHARGER LE STYLE".
+ 4. Lance la lecture de la voix pendant au moins 5 secondes, puis clique sur
+    AUTO MIX. Les boutons se règlent seuls ; tu peux ensuite tout retoucher.
+    Double-clic sur un bouton = retour à sa valeur d'origine.
+
+SI LA LIGNE EN ROUGE APPARAÎT DANS "ACTIONS"
+ Clique dessus, copie le message d'erreur et envoie-le moi : je corrige le projet.
+
+CONTENU DU DOSSIER
+ Source/      le code du plugin (moteur audio + interface)
+ Tests/       tests automatiques du moteur audio
+ Installer/   script qui fabrique le setup
+ .github/     la recette de fabrication automatique
